@@ -31,7 +31,7 @@ while True:
         
         ODF_data = DAN.pull('receiveaccgyro')#Pull data from an output device feature "Dummy_Control"
         #使用DictWriter
-        file=open('line.csv',mode='a',newline='')#加入newline，讓csv不會顯示一行空一行
+        file=open('daily.csv',mode='a',newline='')#加入newline，讓csv不會顯示一行空一行
         writer=csv.DictWriter(file,['acc1','acc2','acc3','pyro1','pyro2','pyro3'])
 
         if ODF_data != None:
