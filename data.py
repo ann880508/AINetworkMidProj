@@ -13,7 +13,7 @@ with open('daily.csv') as file:
     for row in data:
         #每10比換一行
         if count%10==0 and count!=0:    
-            datas.append(rowInTen)   #append是加到下一列   先把之前rowInTen的資料append到datas  append前面不須賦值
+            datas.append(rowInTen)   #append:向列表尾部添加新元素 ，但這裡是把list串到list中  先把之前rowInTen的資料append到datas  append用法前面不須賦值
             rowInTen=[] #再把rowInTen清空
             rowInTen=rowInTen+row        
             count+=1

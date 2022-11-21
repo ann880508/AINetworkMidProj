@@ -1,8 +1,6 @@
 import time, random, requests
 import DAN
 
-import pandas as pd
-import csv
 
 ServerURL = 'https://5.iottalk.tw'      #with non-secure connection
 #ServerURL = 'https://DomainName' #with SSL connection
